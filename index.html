@@ -1,0 +1,75 @@
+<!-- FontAwesome,Bootstrab,JS -->
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./Bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet" />
+    <title>Login</title>
+    <link rel="icon" href="" />
+</head>
+
+
+
+
+<body>
+    <div class="container d-block" id="login">
+        <div id="logForm" class="form-control bg-transparent mt-5 text-white border-0">
+
+            <div class="container">
+
+                <h1 class="text-center mt-5 mb-3">Smart Login System</h1>
+
+                <input id="userEmail" type="email" class="form-control my-3" placeholder="Enter your email">
+
+                <input id="userPassword" type="password" class="form-control my-3" placeholder="Enter your password">
+
+                <p id="success" class="text-center text-danger fs-5 w-100"></p>
+
+                <button id="btnLogin" class="btn btn-outline-info w-100 my-4">Login</button>
+
+                <p class="text-center mb-5">Don’t have an account? <a id="toSign" href="#">Sign Up</a></p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container d-none" id="signup">
+        <div id="signForm" class="form-control bg-transparent mt-5 text-white border-0">
+            <div class="container">
+                <h1 class="text-center mt-5 mb-3">Smart Login System</h1>
+                <input id="name" type="name" class="form-control my-3" placeholder="Enter your name">
+                <input id="email" type="email" class="form-control my-3" placeholder="Enter your email">
+                <input id="password" type="password" class="form-control my-3" placeholder="Enter your password">
+                <p id="warning" class="text-center text-danger fs-5 w-100"></p>
+                <button id="btnSign" class="btn btn-outline-info w-100 my-4">Sign Up</button>
+                <p class="text-center mb-5">You have an account? <a id="toLogin" href="#">Log In</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-none" id="welcomePage">
+        <nav class="navbar navbar-light shadow-lg">
+            <a class="navbar-brand text-light ms-5" href="#">Smart Login</a>
+            <div class="" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <button class="btn btn-outline-danger me-5" id="logOut" href="#login">LOGOUT</button>
+                    </li>
+                </ul>
+                
+
+
+            </div>
+        </nav>
+        <div class="container vh-100 d-flex justify-content-center align-items-center">
+            <p class="fs-1 text-white align-self-center text-capitalize shadow-lg" id="typeName"></p>
+        </div>
+    </div>
+    <script src="./Bootstrap/bootstrap.bundle.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
